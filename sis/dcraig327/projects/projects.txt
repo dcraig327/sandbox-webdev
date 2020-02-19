@@ -1,0 +1,6 @@
+
+List of project ideas
+
+
+
+type-sizes.c        library to show all sizes of all possible C types on your platform
