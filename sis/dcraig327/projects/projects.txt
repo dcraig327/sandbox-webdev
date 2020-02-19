@@ -3,5 +3,6 @@ List of project ideas
 
 
 
-type-sizes.c        library to show all sizes of all possible C types on platform
+type-sizes.c        library to show sizes of all C types
+pc-timings.c        library to show all pc timings such as memory speed, etc.
 input-wrapper.c     library to get formatted input from the user
