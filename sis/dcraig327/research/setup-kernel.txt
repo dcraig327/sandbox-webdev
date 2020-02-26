@@ -1,0 +1,14 @@
+sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+cd linux
+git checkout linux-5.5.y
+cp /boot/config-$(uname -r) .config
+make menuconfig # save and exit
+echo '#!/bin/bash' > c.sh
+echo 's=`date +%s`' >> c.sh
+echo 'make -s -j $(nproc) 2>&1' >> c.sh
+echo 'e=`date +%s`' >> c.sh
+echo 'r=$((e-s))' >> c.sh
+echo 'echo $((r)) > output' >> c.sh
+chmod +x c.sh
+./c.sh
