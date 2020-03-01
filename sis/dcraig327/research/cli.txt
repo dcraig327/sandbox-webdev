@@ -1,0 +1,4 @@
+
+output exact file size recursively, one line per filesize:
+ls -lARp |grep -v / |grep -v '^total' |grep -v '^$' |awk '{print $5}'
+
