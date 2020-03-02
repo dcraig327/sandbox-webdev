@@ -4,3 +4,29 @@ Container for Ideas, Projects, Brainstorms, etc.
 
 NOTE: Soon this repo will likely switch to the LGPLv2 license. I'm dragging
 my feet as once you choose a license it can't be undone.
+
+
+web-projects
+------------
+make-a-game         How to make a video game
+                    Site to teach beginners, from 12+ the basics of making video games
+
+projects
+--------
+(none)
+
+
+future web-projects
+-------------------
+(none)
+
+future projects
+---------------
+type-sizes.c        library to show sizes of all C types
+pc-timings.c        library to show all pc timings such as memory speed 
+                    instruction clocks, etc.
+input-wrapper.c     library to get formatted input from the user
+multi-threaded.c    library to enable or test multi-threading
+*-multi-threaded    project that will enable multi-threading for any existing 
+                    project to test how difficult and what are the challenges 
+                    to porting existing non-multi-threaded code
