@@ -1,4 +1,16 @@
 
-output exact file size recursively, one line per filesize:
-ls -lARp |grep -v / |grep -v '^total' |grep -v '^$' |awk '{print $5}'
+#output exact file size recursively, one line per filesize, ignore directories
+#set . to the root to scan
+ls . -lARp |grep -v / |grep -v '^total' |grep -v '^$' |awk '{print $5}' > output
 
+#next to display those in a graph, using WPS, open output in WPS
+
+
+
+
+
+##############################
+## NOTES                    ##
+##############################
+#printf works on cli
+printf "%s\n" $path 
