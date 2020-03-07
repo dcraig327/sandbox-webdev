@@ -4,9 +4,37 @@ html {
   background-color: #eee8d5;
 }
 
+/*
+  auto is a keyword and <length> is a summary of input
+  [] below it can be optional if Hz allow
+  {1,4} below means it occurs 1-4 times
+*/
+/*  margin: [ <length> | <percentage> | auto]{1,4}
+
+    vale is a length, percentage or the keyword auto
+
+    length: size as a fixed value (em,px,rem)
+    
+    percentage: size as a percentage, relative to the width of the containing block (%)
+
+    auto: browser selects a suitable margin to use. ie: in certain cases this value can be used to center an element
+
+    {1}:  all four sides
+    {2}:  top-bottom left-right
+    {3}:  top left-right bottom
+    {4}:  top right bottom left  (clockwise)
+
+
+    global values:
+    inherit
+    initial
+    unset
+*/
+/*  border: width style color */
 body {
   width: 750px;
   margin: 0 auto;
+  color: #002b36;
   background-color: #fdf6e3;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
@@ -15,13 +43,19 @@ body {
 h1 {
   font-size: 60px;
   text-align: center;
-  margin-bottom: 0px;
+  color: #268bd2;
+  margin: 0;
+  padding: 20px 0px 0px;
+  text-shadow: 3px 3px 1px #002b36;
 }
 
 h2 {
   font-size: 20px;
   text-align: center;
-  margin-top: 0px;
+  color: #93a1a1;
+  margin: 0;
+  padding: 0px 0px 10px;
+  text-shadow: -1px -1px 1px #002b36df;
 }
 
 p, li {
