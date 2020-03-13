@@ -18,7 +18,9 @@ projects
 
 future web-projects
 -------------------
-(none)
+scraping            practice scraping using Python/JS
+map                 create a dynamic map filled with information
+
 
 future projects
 ---------------
