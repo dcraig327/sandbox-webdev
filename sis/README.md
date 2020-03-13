@@ -5,6 +5,9 @@ Container for Ideas, Projects, Brainstorms, etc.
 NOTE: Soon this repo will likely switch to the LGPLv2 license. I'm dragging
 my feet as once you choose a license it can't be undone.
 
+Information on how to automate adding a LICENSE file and also adding the notice
+https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html
+
 
 web-projects
 ------------
