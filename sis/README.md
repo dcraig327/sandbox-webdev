@@ -9,14 +9,10 @@ Information on how to automate adding a LICENSE file and also adding the notice
 https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html
 
 
-web-projects
-------------
-make-a-game         How to make a video game
-                    Site to teach beginners, from 12+ the basics of making video games
-
 projects
 --------
-(none)
+make-a-game         How to make a video game
+                    Site to teach beginners, from 12+ the basics of making video games
 
 
 future web-projects
