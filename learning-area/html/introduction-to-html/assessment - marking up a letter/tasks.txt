@@ -1,7 +1,7 @@
 Block/structural semantics
 
-    Use appropriate document structure including doctype, and <html>, <head> and <body> elements.
-    In general, the letter should be marked up as an organization of headings and  paragraphs, with the following exception. There is one top level heading (the "Re:" line) and three second level headings.
+x    Use appropriate document structure including doctype, and <html>, <head> and <body> elements.
+x    In general, the letter should be marked up as an organization of headings and  paragraphs, with the following exception. There is one top level heading (the "Re:" line) and three second level headings.
     Use an appropriate list type to mark up the semester start dates, study subjects, and exotic dances.
     Put the two addresses inside <address> elements. Each line of the address should sit on a new line, but not be in a new paragraph.
 
