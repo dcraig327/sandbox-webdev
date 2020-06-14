@@ -57,8 +57,4 @@ function main() {
 
 
 // START PROGRAM //////////////////////////////////////////////////////////////
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', start);
-=======
-document.addEventListener('DOMContentLoaded', first_js.start);
->>>>>>> 75afb071d755e61dfdaff3cb3e4f4598a54c3056
