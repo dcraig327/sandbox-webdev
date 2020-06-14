@@ -1,3 +1,3 @@
 # game-production
 
-My journey back into Video Game Production
+My journey into Video Game Production
