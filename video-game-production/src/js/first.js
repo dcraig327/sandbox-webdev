@@ -15,11 +15,18 @@
 // GLOBALS ////////////////////////////////////////////////////////////////////
 var game = {
   canvas: undefined,
-  canvasContext: undefined
+  canvasContext: undefined,
+  rectPos: 0
 };
 
 
 // FUNCTIONS //////////////////////////////////////////////////////////////////
+
+game.clearCanvas = function() {
+  game.canvasContext.clearRect(0,0, game.canvas.width,game.canvas.height);
+}
+
+///////////////////////////////////////////////////////////////////////////////
 
 game.start = function() {
   game.canvas = document.getElementById("myCanvas");
@@ -37,6 +44,8 @@ game.end = function() {
 ///////////////////////////////////////////////////////////////////////////////
 
 game.update = function() {
+  var d = new Date();
+  game.rectPos = d.getTime() % game.canvas.width;
 }
 
 
@@ -44,7 +53,9 @@ game.update = function() {
 
 game.draw = function() {
   game.canvasContext.fillStyle = "blue";
-  game.canvasContext.fillRect(0,0, game.canvas.width, game.canvas.height);
+
+  // x,y, w,h
+  game.canvasContext.fillRect(game.rectPos,100, 50,50);
 }
 
 
@@ -52,6 +63,7 @@ game.draw = function() {
 
 game.main = function() {
   game.update();
+  game.clearCanvas();
   game.draw();
   window.setTimeout(game.main, 1000/60);
 }
