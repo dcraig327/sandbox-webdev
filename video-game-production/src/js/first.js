@@ -15,7 +15,7 @@
 // GLOBALS ////////////////////////////////////////////////////////////////////
 var game = {
   canvas: undefined,
-  canvasContext: undefined,
+  ctx: undefined,
   rectPos: 0,
   lastFrame: 0,    //ms of last frame
   curFrame: 0,      //ms of current frame
@@ -27,15 +27,15 @@ var game = {
 // FUNCTIONS //////////////////////////////////////////////////////////////////
 
 game.clearCanvas = function() {
-  game.canvasContext.clearRect(0,0, game.canvas.width,game.canvas.height);
+  game.ctx.clearRect(0,0, game.canvas.width,game.canvas.height);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
 game.start = function() {
   game.canvas = document.getElementById("myCanvas");
-  game.canvasContext = game.canvas.getContext("2d");
-  game.canvasContext.font = '24px serif';
+  game.ctx = game.canvas.getContext("2d");
+  game.ctx.font = '24px serif';
   game.main();
 }
 
@@ -63,18 +63,18 @@ game.update = function() {
 ///////////////////////////////////////////////////////////////////////////////
 
 game.draw = function() {
-  game.canvasContext.fillStyle = "blue";
+  game.ctx.fillStyle = "blue";
 
   // x,y, w,h
-//  game.canvasContext.fillRect(game.rectPos,100, 50,50);
-  game.canvasContext.fillRect(game.rectPos,game.rectPos, 50,50);
+//  game.ctx.fillRect(game.rectPos,100, 50,50);
+  game.ctx.fillRect(game.rectPos,game.rectPos, 50,50);
 
   //show the timer
   var time = 1000.0 / (game.curFrame - game.lastFrame);
   game.totalTime += time;
   game.totalFrames++;
   var avgTime = Math.round(game.totalTime / game.totalFrames);
-  game.canvasContext.fillText(avgTime,10,50);
+  game.ctx.fillText(avgTime,10,50);
 }
 
 
