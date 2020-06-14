@@ -13,48 +13,49 @@
 
 
 // GLOBALS ////////////////////////////////////////////////////////////////////
-
-var canvas = undefined;
-var canvasContext = undefined;
+var game = {
+  canvas: undefined,
+  canvasContext: undefined
+};
 
 
 // FUNCTIONS //////////////////////////////////////////////////////////////////
 
-function start() {
-  canvas = document.getElementById("myCanvas");
-  canvasContext = canvas.getContext("2d");
-  main();
+game.start = function() {
+  game.canvas = document.getElementById("myCanvas");
+  game.canvasContext = game.canvas.getContext("2d");
+  game.main();
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function end() {
+game.end = function() {
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function update() {
+game.update = function() {
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function draw() {
-  canvasContext.fillStyle = "blue";
-  canvasContext.fillRect(0,0, canvas.width, canvas.height);
+game.draw = function() {
+  game.canvasContext.fillStyle = "blue";
+  game.canvasContext.fillRect(0,0, game.canvas.width, game.canvas.height);
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function main() {
-  update();
-  draw();
-  window.setTimeout(main, 1000/60);
+game.main = function() {
+  game.update();
+  game.draw();
+  window.setTimeout(game.main, 1000/60);
 }
 
 
 // START PROGRAM //////////////////////////////////////////////////////////////
-document.addEventListener('DOMContentLoaded', start);
+document.addEventListener('DOMContentLoaded', game.start);
