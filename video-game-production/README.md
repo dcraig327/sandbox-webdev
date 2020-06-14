@@ -1,3 +1,3 @@
-# dcraig327/game-production
+# game-production
 
-## My journey into video game production
+### Documenting my journey into video game production
