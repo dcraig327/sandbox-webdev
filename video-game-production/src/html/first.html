@@ -2,9 +2,20 @@
 <head>
   <title>First JS Game</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <script>
+    changeCanvasColor = function() {
+      var canvas = document.getElementById("mycanvas");
+      var context = canvas.getContext("2d");
+      context.fillStyle = "blue";
+      context.fillRect(0,0, canvas.width, canvas.height);
+    }
+    document.addEventListener('DOMContentLoaded', changeCanvasColor);
+  </script>
 </head>
 <body>
   <h1>My First JS Game!</h1>
-  <canvas id="mycanvas" width="400" height="300"></canvas>
+  <div id="gameArea">
+    <canvas id="mycanvas" width="800" height="600"></canvas>
+  </div>
 </body>
 </html>
