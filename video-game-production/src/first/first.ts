@@ -23,6 +23,7 @@ let canvas: HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D;
 let backgroundSprite: HTMLImageElement;
 let baloonSprite: HTMLImageElement;
+let backgroundMusic: HTMLAudioElement;
 
 let baloonPos = {
   x:100,
@@ -63,6 +64,10 @@ function start() {
     backgroundSprite.src = "../../assets/spr_background.jpg";
     baloonSprite = new Image();
     baloonSprite.src = "../../assets/spr_balloon.png";
+    backgroundMusic = new Audio();
+    backgroundMusic.src = "../../assets/snd_music.mp3";
+    backgroundMusic.play();
+    backgroundMusic.volume = 0.4;
     main();
 }
 

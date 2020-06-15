@@ -17,6 +17,7 @@ var First;
     let ctx;
     let backgroundSprite;
     let baloonSprite;
+    let backgroundMusic;
     let baloonPos = {
         x: 100,
         y: 100
@@ -47,6 +48,10 @@ var First;
         backgroundSprite.src = "../../assets/spr_background.jpg";
         baloonSprite = new Image();
         baloonSprite.src = "../../assets/spr_balloon.png";
+        backgroundMusic = new Audio();
+        backgroundMusic.src = "../../assets/snd_music.mp3";
+        backgroundMusic.play();
+        backgroundMusic.volume = 0.4;
         main();
     }
     ///////////////////////////////////////////////////////////////////////////////
