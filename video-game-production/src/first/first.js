@@ -36,6 +36,7 @@ var First;
     function drawImage(sprite, position) {
         ctx.save();
         ctx.translate(position.x, position.y);
+        // able to add image rotation and scaling here
         ctx.drawImage(sprite, 0, 0, sprite.width, sprite.height, 0, 0, sprite.width, sprite.height);
         ctx.restore();
     }
@@ -56,6 +57,7 @@ var First;
         var d = new Date();
         lastFrame = curFrame;
         curFrame = performance.now();
+        baloonPos.x = d.getTime() % canvas.width;
     }
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
