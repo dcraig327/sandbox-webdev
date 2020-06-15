@@ -16,6 +16,10 @@ var First;
     let canvas;
     let ctx;
     let baloonSprite;
+    let baloonPos = {
+        x: 100,
+        y: 100
+    };
     //ms of last frame
     let lastFrame = 0;
     //ms of current frame
@@ -56,10 +60,6 @@ var First;
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
         ctx.fillStyle = "blue";
-        var baloonPos = {
-            x: 100,
-            y: 100
-        };
         drawImage(baloonSprite, baloonPos);
         //show the timer
         totalTime += (1000.0 / (curFrame - lastFrame));

@@ -12,15 +12,20 @@
 namespace First
 {
 
-
 // INCLUDES ///////////////////////////////////////////////////////////////////
 
 
 
+
 // GLOBALS ////////////////////////////////////////////////////////////////////
+
 let canvas: HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D;
 let baloonSprite: HTMLImageElement;
+let baloonPos = {
+  x:100,
+  y:100
+};
 
 //ms of last frame
 let lastFrame = 0;
@@ -30,6 +35,7 @@ let curFrame = 0;
 let totalTime = 0;
 //total number of frames of execution
 let totalFrames = 0;
+
 
 
 // FUNCTIONS //////////////////////////////////////////////////////////////////
@@ -75,10 +81,6 @@ function update() {
 
 function draw() {
     ctx.fillStyle = "blue";
-    var baloonPos = {
-      x:100,
-      y:100
-    };
     drawImage(baloonSprite, baloonPos);
 
     //show the timer
@@ -96,6 +98,7 @@ function main() {
     draw();
     window.setTimeout(main, 1000 / 60);
 }
+
 
 
 // START PROGRAM //////////////////////////////////////////////////////////////
