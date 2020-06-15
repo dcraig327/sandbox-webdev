@@ -1,0 +1,26 @@
+
+ctrl + \      split window
+alt + L/R     navigate previously closed files
+ctrl + 1/2/.. navigate windows
+ctrl + 0      focus explorer panel
+
+see outline in explorer panel
+
+ctrl + shift + o    open command pallete
+ctrl + t    searchable command pallete
+ctrl + g    jump to line number
+ctrl + u    jump back
+
+F12         jump to definition of currently highlighted
+alt + F12   peek at definition
+shift + F12 peek at references (use up/down to navigate)
+
+F2          rename symbol
+F8          jump to error
+
+shift + alt + s     show hover
+ctrl + .            show recommended actions
+
+
+ctrl + up/down      prev/next function/member-fn
+
