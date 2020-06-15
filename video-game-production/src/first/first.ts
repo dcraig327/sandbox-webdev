@@ -21,19 +21,18 @@ namespace First
 
 let canvas: HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D;
+let backgroundSprite: HTMLImageElement;
 let baloonSprite: HTMLImageElement;
+
 let baloonPos = {
   x:100,
   y:100
 };
 
-//ms of last frame
+//timer variables measured in ms
 let lastFrame = 0;
-//ms of current frame
 let curFrame = 0;
-//total ms of execution
 let totalTime = 0;
-//total number of frames of execution
 let totalFrames = 0;
 
 
@@ -60,6 +59,8 @@ function start() {
     canvas = <HTMLCanvasElement> document.getElementById("gameCanvas");
     ctx = canvas.getContext("2d");
     ctx.font = '24px serif';
+    backgroundSprite = new Image();
+    backgroundSprite.src = "../../assets/spr_background.jpg";
     baloonSprite = new Image();
     baloonSprite.src = "../../assets/spr_balloon.png";
     main();
@@ -73,7 +74,7 @@ function end() {
 ///////////////////////////////////////////////////////////////////////////////
 
 function update() {
-    var d = new Date();
+    let d = new Date();
     lastFrame = curFrame;
     curFrame = performance.now();
     baloonPos.x = d.getTime() % canvas.width;
@@ -82,13 +83,13 @@ function update() {
 ///////////////////////////////////////////////////////////////////////////////
 
 function draw() {
-    ctx.fillStyle = "blue";
-    drawImage(baloonSprite, baloonPos);
+    drawImage(backgroundSprite, {x:0, y:0});
+    drawImage(baloonSprite, baloonPos);    
 
     //show the timer
     totalTime += (1000.0 / (curFrame - lastFrame));
     totalFrames++;
-    var avgTime = Math.round(totalTime / totalFrames);
+    let avgTime = Math.round(totalTime / totalFrames);
     ctx.fillText(avgTime.toString(), 10, 50);
 }
 
