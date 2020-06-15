@@ -19,8 +19,8 @@ var First;
     let baloonSprite;
     let backgroundMusic;
     let baloonPos = {
-        x: 100,
-        y: 100
+        x: 0,
+        y: 0
     };
     //timer variables measured in ms
     let lastFrame = 0;
@@ -28,6 +28,9 @@ var First;
     let totalTime = 0;
     let totalFrames = 0;
     // FUNCTIONS //////////////////////////////////////////////////////////////////
+    function handleMouseMove(evt) {
+        baloonPos = { x: evt.pageX, y: evt.pageY };
+    }
     function clear() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
@@ -50,8 +53,9 @@ var First;
         baloonSprite.src = "../../assets/spr_balloon.png";
         backgroundMusic = new Audio();
         backgroundMusic.src = "../../assets/snd_music.mp3";
-        backgroundMusic.play();
+        //backgroundMusic.play();
         backgroundMusic.volume = 0.4;
+        document.onmousemove = handleMouseMove;
         main();
     }
     ///////////////////////////////////////////////////////////////////////////////
@@ -62,7 +66,6 @@ var First;
         let d = new Date();
         lastFrame = curFrame;
         curFrame = performance.now();
-        baloonPos.x = d.getTime() % canvas.width;
     }
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
