@@ -15,8 +15,7 @@ var First;
     // GLOBALS ////////////////////////////////////////////////////////////////////
     let canvas;
     let ctx;
-    let baloonSprite = undefined;
-    let rectPos = 0;
+    let baloonSprite;
     //ms of last frame
     let lastFrame = 0;
     //ms of current frame
@@ -30,19 +29,19 @@ var First;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
     ///////////////////////////////////////////////////////////////////////////////
-    /*
     function drawImage(sprite, position) {
-      game.ctx.save();
-      game.ctx.translate(position.x, position.y);
-      game.ctx.drawImage(sprite,0,0, sprite.width, sprite.height, 0,0, sprite.width, sprite.height);
-      game.ctx.restore();
+        ctx.save();
+        ctx.translate(position.x, position.y);
+        ctx.drawImage(sprite, 0, 0, sprite.width, sprite.height, 0, 0, sprite.width, sprite.height);
+        ctx.restore();
     }
-    */
     ///////////////////////////////////////////////////////////////////////////////
     function start() {
         canvas = document.getElementById("gameCanvas");
         ctx = canvas.getContext("2d");
         ctx.font = '24px serif';
+        baloonSprite = new Image();
+        baloonSprite.src = "../../assets/spr_balloon.png";
         main();
     }
     ///////////////////////////////////////////////////////////////////////////////
@@ -53,23 +52,19 @@ var First;
         var d = new Date();
         lastFrame = curFrame;
         curFrame = performance.now();
-        //  var pos = (d.getTime()/2) % game.canvas.width;
-        //  pos = game.canvas.width - pos;      //right to left  
-        //  game.rectPos = pos;
     }
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
         ctx.fillStyle = "blue";
-        // x,y, w,h
-        ctx.fillRect(rectPos, 100, 50, 50);
-        // game.ctx.fillRect(game.rectPos,game.rectPos, 50,50);
-        // game.drawImage(game.baloonSprite, {x:100, y:100});
+        var baloonPos = {
+            x: 100,
+            y: 100
+        };
+        drawImage(baloonSprite, baloonPos);
         //show the timer
-        let time = 1000.0 / (curFrame - lastFrame);
-        totalTime += time;
+        totalTime += (1000.0 / (curFrame - lastFrame));
         totalFrames++;
         var avgTime = Math.round(totalTime / totalFrames);
-        var num = 1;
         ctx.fillText(avgTime.toString(), 10, 50);
     }
     ///////////////////////////////////////////////////////////////////////////////
