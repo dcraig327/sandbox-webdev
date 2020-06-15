@@ -14,8 +14,11 @@
 
 // GLOBALS ////////////////////////////////////////////////////////////////////
 var game = {
+  /** @type {HTMLCanvasElement} */
   canvas: undefined,
+  /** @type {CanvasRenderingContext2D} */
   ctx: undefined,
+
   rectPos: 0,
   lastFrame: 0,    //ms of last frame
   curFrame: 0,      //ms of current frame
