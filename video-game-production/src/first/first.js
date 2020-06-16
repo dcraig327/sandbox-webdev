@@ -63,7 +63,10 @@ var First;
     }
     ///////////////////////////////////////////////////////////////////////////////
     function update() {
-        let d = new Date();
+        updateTimer(); //first thing done in the game loop
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function updateTimer() {
         lastFrame = curFrame;
         curFrame = performance.now();
     }
@@ -79,10 +82,18 @@ var First;
     }
     ///////////////////////////////////////////////////////////////////////////////
     function main() {
-        update();
+        update(); // timer is updated here
         clear();
-        draw();
-        window.setTimeout(main, 1000 / 60);
+        draw(); // framerate is rendered here  
+        endMain(); //last thing done in the game loop
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function endMain() {
+        let currTime = performance.now();
+        let time = 16 - (currTime - curFrame);
+        if (time < 0)
+            time = 0;
+        window.setTimeout(main, time);
     }
     // START PROGRAM //////////////////////////////////////////////////////////////
     document.addEventListener('DOMContentLoaded', start);
