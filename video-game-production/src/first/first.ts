@@ -21,13 +21,21 @@ namespace First
 
 let canvas: HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D;
+let backgroundMusic: HTMLAudioElement;
+
 let backgroundSprite: HTMLImageElement;
 let baloonSprite: HTMLImageElement;
-let backgroundMusic: HTMLAudioElement;
+let spritesStillLoading = 0;
 
 let baloonPos = {
   x:0,
   y:0
+};
+
+let keyboard = { keyDown: -1 };
+let mouse = {
+  position: {x:0, y:0},
+  leftDown: false
 };
 
 //timer variables measured in ms
@@ -40,27 +48,28 @@ let totalFrames = 0;
 
 // FUNCTIONS //////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////////
-
 function main() {
   canvas = <HTMLCanvasElement> document.getElementById("gameCanvas");
   ctx = canvas.getContext("2d");
   ctx.font = '24px serif';
-  backgroundSprite = new Image();
-  backgroundSprite.src = "../../assets/spr_background.jpg";
-  baloonSprite = new Image();
-  baloonSprite.src = "../../assets/spr_balloon.png";
+  backgroundSprite = loadImage("../../assets/spr_background.jpg");
+  baloonSprite = loadImage("../../assets/spr_balloon.png");
   backgroundMusic = new Audio();
   backgroundMusic.src = "../../assets/snd_music.mp3";
   //backgroundMusic.play();
   backgroundMusic.volume = 0.4;
   document.onmousemove = handleMouseMove;
-  gameLoop();
+  document.onmousedown = handleMouseDown;
+  document.onmouseup = handleMouseUp;
+  document.onkeydown = handleKeyDown;
+  document.onkeyup = handleKeyUp;
+  loadAssets();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
 function update() {  
+  baloonPos = mouse.position;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -88,8 +97,47 @@ function clear() {
 
 ///////////////////////////////////////////////////////////////////////////////
 
+function handleKeyDown(evt: KeyboardEvent) {
+  keyboard.keyDown = evt.keyCode;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function handleKeyUp(evt: KeyboardEvent) {
+  keyboard.keyDown = -1;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 function handleMouseMove(evt: MouseEvent) {
-  baloonPos = {x: evt.pageX, y: evt.pageY};
+  mouse.position.x = evt.pageX;
+  mouse.position.y = evt.pageY;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function handleMouseDown(evt: MouseEvent) {
+  if(evt.which === 1)
+    mouse.leftDown = true;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function handleMouseUp(evt: MouseEvent) {
+  if(evt.which === 1)
+    mouse.leftDown = false;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function loadImage(imageName) {
+  let image = new Image();
+  image.src = imageName;
+  spritesStillLoading++;
+  image.onload = function () {
+    spritesStillLoading--;
+  }
+  return image;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -100,6 +148,15 @@ function drawImage(sprite, position) {
   // able to add image rotation and scaling here
   ctx.drawImage(sprite,0,0, sprite.width, sprite.height, 0,0, sprite.width, sprite.height);
   ctx.restore();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function loadAssets() {
+  if(spritesStillLoading == 0)
+    gameLoop();
+  else
+    window.setTimeout(loadAssets,1);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -116,7 +173,8 @@ function endGameLoop() {
   let time = 16 - (currTime - curFrame);
   if(time < 0)
     time = 0;
-  window.setTimeout(gameLoop, time);
+//  window.setTimeout(gameLoop, time);
+  window.requestAnimationFrame(gameLoop);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
