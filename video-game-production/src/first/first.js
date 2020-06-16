@@ -28,22 +28,8 @@ var First;
     let totalTime = 0;
     let totalFrames = 0;
     // FUNCTIONS //////////////////////////////////////////////////////////////////
-    function handleMouseMove(evt) {
-        baloonPos = { x: evt.pageX, y: evt.pageY };
-    }
-    function clear() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
     ///////////////////////////////////////////////////////////////////////////////
-    function drawImage(sprite, position) {
-        ctx.save();
-        ctx.translate(position.x, position.y);
-        // able to add image rotation and scaling here
-        ctx.drawImage(sprite, 0, 0, sprite.width, sprite.height, 0, 0, sprite.width, sprite.height);
-        ctx.restore();
-    }
-    ///////////////////////////////////////////////////////////////////////////////
-    function start() {
+    function main() {
         canvas = document.getElementById("gameCanvas");
         ctx = canvas.getContext("2d");
         ctx.font = '24px serif';
@@ -56,19 +42,10 @@ var First;
         //backgroundMusic.play();
         backgroundMusic.volume = 0.4;
         document.onmousemove = handleMouseMove;
-        main();
-    }
-    ///////////////////////////////////////////////////////////////////////////////
-    function end() {
+        gameLoop();
     }
     ///////////////////////////////////////////////////////////////////////////////
     function update() {
-        updateTimer(); //first thing done in the game loop
-    }
-    ///////////////////////////////////////////////////////////////////////////////
-    function updateTimer() {
-        lastFrame = curFrame;
-        curFrame = performance.now();
     }
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
@@ -81,20 +58,44 @@ var First;
         ctx.fillText(avgTime.toString(), 10, 50);
     }
     ///////////////////////////////////////////////////////////////////////////////
-    function main() {
-        update(); // timer is updated here
-        clear();
-        draw(); // framerate is rendered here  
-        endMain(); //last thing done in the game loop
+    function clear() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
     ///////////////////////////////////////////////////////////////////////////////
-    function endMain() {
+    /* FUNCTIONS GO HERE */
+    ///////////////////////////////////////////////////////////////////////////////
+    function handleMouseMove(evt) {
+        baloonPos = { x: evt.pageX, y: evt.pageY };
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function drawImage(sprite, position) {
+        ctx.save();
+        ctx.translate(position.x, position.y);
+        // able to add image rotation and scaling here
+        ctx.drawImage(sprite, 0, 0, sprite.width, sprite.height, 0, 0, sprite.width, sprite.height);
+        ctx.restore();
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function startGameLoop() {
+        lastFrame = curFrame;
+        curFrame = performance.now();
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function endGameLoop() {
         let currTime = performance.now();
         let time = 16 - (currTime - curFrame);
         if (time < 0)
             time = 0;
-        window.setTimeout(main, time);
+        window.setTimeout(gameLoop, time);
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function gameLoop() {
+        startGameLoop(); // timer is updated here
+        update();
+        clear();
+        draw(); // framerate is rendered here  
+        endGameLoop(); // last thing done in the game loop
     }
     // START PROGRAM //////////////////////////////////////////////////////////////
-    document.addEventListener('DOMContentLoaded', start);
+    document.addEventListener('DOMContentLoaded', main);
 })(First || (First = {})); // end namespace First
