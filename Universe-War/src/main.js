@@ -10,6 +10,8 @@ var Main;
     // GLOBALS ////////////////////////////////////////////////////////////////////
     let canvas;
     let ctx;
+    let spritesStillLoading = 0;
+    let playerSprite;
     //timer variables store time in ms, displays frames over the past second
     const TIMER_DURATION = 1000; //ms
     let timerLastCalculation = 0;
@@ -20,21 +22,50 @@ var Main;
         canvas = document.getElementById("gameCanvas");
         ctx = canvas.getContext("2d");
         ctx.font = '24px serif';
-        gameLoop();
+        playerSprite = loadImage("../assets/PlayerShip.png");
+        loadAssets();
     }
     ///////////////////////////////////////////////////////////////////////////////
     function update() {
     }
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
+        ctx.fillStyle = 'white';
         ctx.fillText(timerAverageFPS.toString() + " FPS", 10, 50);
     }
     ///////////////////////////////////////////////////////////////////////////////
     function clear() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        //ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
     ///////////////////////////////////////////////////////////////////////////////
     /* FUNCTIONS GO HERE */
+    ///////////////////////////////////////////////////////////////////////////////
+    function loadImage(imageName) {
+        let image = new Image();
+        image.src = imageName;
+        spritesStillLoading++;
+        image.onload = function () {
+            spritesStillLoading--;
+        };
+        return image;
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function drawImage(sprite, position) {
+        ctx.save();
+        ctx.translate(position.x, position.y);
+        // able to add image rotation and scaling here
+        ctx.drawImage(sprite, 0, 0, sprite.width, sprite.height, 0, 0, sprite.width, sprite.height);
+        ctx.restore();
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function loadAssets() {
+        if (spritesStillLoading == 0)
+            gameLoop();
+        else
+            window.setTimeout(loadAssets, 1);
+    }
     ///////////////////////////////////////////////////////////////////////////////
     function timerTick() {
         timerFrameCount++;
@@ -48,20 +79,12 @@ var Main;
         }
     }
     ///////////////////////////////////////////////////////////////////////////////
-    function start() {
-        timerTick();
-    }
-    ///////////////////////////////////////////////////////////////////////////////
-    function end() {
-        window.requestAnimationFrame(gameLoop);
-    }
-    ///////////////////////////////////////////////////////////////////////////////
     function gameLoop() {
-        start(); // timer is updated here
+        timerTick();
         update();
         clear();
-        draw(); // framerate is rendered here  
-        end(); // last thing done in the game loop
+        draw();
+        window.requestAnimationFrame(gameLoop);
     }
     // START PROGRAM //////////////////////////////////////////////////////////////
     document.addEventListener('DOMContentLoaded', main);
