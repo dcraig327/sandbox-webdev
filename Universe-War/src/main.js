@@ -12,6 +12,12 @@ var Main;
     let ctx;
     let spritesStillLoading = 0;
     let playerSprite;
+    let playerShipPosition = { x: 400, y: 500 };
+    let keyboard = { keyDown: "" };
+    let mouse = {
+        position: { x: 0, y: 0 },
+        leftDown: false
+    };
     //timer variables store time in ms, displays frames over the past second
     const TIMER_DURATION = 1000; //ms
     let timerLastCalculation = 0;
@@ -23,16 +29,33 @@ var Main;
         ctx = canvas.getContext("2d");
         ctx.font = '24px serif';
         playerSprite = loadImage("../assets/PlayerShip.png");
+        document.onmousemove = handleMouseMove;
+        document.onmousedown = handleMouseDown;
+        document.onmouseup = handleMouseUp;
+        document.onkeydown = handleKeyDown;
+        document.onkeyup = handleKeyUp;
         loadAssets();
     }
     ///////////////////////////////////////////////////////////////////////////////
     function update() {
+        if (keyboard.keyDown === "ArrowUp") {
+            playerShipPosition.y--;
+        }
+        else if (keyboard.keyDown === "ArrowDown") {
+            playerShipPosition.y++;
+        }
+        else if (keyboard.keyDown === "ArrowLeft") {
+            playerShipPosition.x--;
+        }
+        else if (keyboard.keyDown === "ArrowRight") {
+            playerShipPosition.x++;
+        }
     }
     ///////////////////////////////////////////////////////////////////////////////
     function draw() {
         ctx.fillStyle = 'white';
         ctx.fillText(timerAverageFPS.toString() + " FPS", 10, 50);
-        drawImage(playerSprite, { x: 400, y: 500 });
+        drawImage(playerSprite, playerShipPosition);
     }
     ///////////////////////////////////////////////////////////////////////////////
     function clear() {
@@ -42,6 +65,29 @@ var Main;
     }
     ///////////////////////////////////////////////////////////////////////////////
     /* FUNCTIONS GO HERE */
+    ///////////////////////////////////////////////////////////////////////////////
+    function handleKeyDown(evt) {
+        keyboard.keyDown = evt.code;
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function handleKeyUp(evt) {
+        keyboard.keyDown = "";
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function handleMouseMove(evt) {
+        mouse.position.x = evt.pageX;
+        mouse.position.y = evt.pageY;
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function handleMouseDown(evt) {
+        if (evt.which === 1)
+            mouse.leftDown = true;
+    }
+    ///////////////////////////////////////////////////////////////////////////////
+    function handleMouseUp(evt) {
+        if (evt.which === 1)
+            mouse.leftDown = false;
+    }
     ///////////////////////////////////////////////////////////////////////////////
     function loadImage(imageName) {
         let image = new Image();
