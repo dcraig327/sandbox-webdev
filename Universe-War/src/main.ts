@@ -45,6 +45,8 @@ function update() {
 function draw() {
   ctx.fillStyle = 'white';
   ctx.fillText(timerAverageFPS.toString() + " FPS", 10, 50);
+
+  drawImage(playerSprite, {x:400, y:500});
 }
 
 ///////////////////////////////////////////////////////////////////////////////
