@@ -12,12 +12,19 @@ namespace Main
 
 // GLOBALS ////////////////////////////////////////////////////////////////////
 
+const DEBUG = true;
+
 let canvas: HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D;
+let now = 0;
 let spritesStillLoading = 0;
 
 let playerSprite: HTMLImageElement;
 let playerShipPosition = {x:400, y:500};
+let playerProjectile: HTMLImageElement;
+let playerProjectilePosition = {x:0, y:0};
+let playerProjectileDeath = 0;
+const PLAYER_PROJECTILE_TTL = 1000;
 
 let keyboard = { keyDown: "" };
 let mouse = {
@@ -40,6 +47,7 @@ function main() {
 
   ctx.font = '24px serif';
   playerSprite = loadImage("../assets/PlayerShip.png");
+  playerProjectile = loadImage("../assets/PlayerProjectile.png");
 
   document.onmousemove = handleMouseMove;
   document.onmousedown = handleMouseDown;
@@ -52,7 +60,42 @@ function main() {
 
 ///////////////////////////////////////////////////////////////////////////////
 
+function input() {
+  playerMovement();
+  playerFire();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 function update() {
+  if(playerProjectileDeath <= now) {
+    playerProjectileDeath = 0;
+  } else if(playerProjectileDeath !== 0) {
+    playerProjectilePosition.y--;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function draw() {
+  drawFPS();
+  drawPlayerShip();
+  drawPlayerProjectile();
+  if(DEBUG)
+    drawDebugInfo();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function clear() {
+  //ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "black";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function playerMovement() {
   if(keyboard.keyDown === "ArrowUp") {
     playerShipPosition.y--;
   } else if(keyboard.keyDown === "ArrowDown") {
@@ -66,25 +109,51 @@ function update() {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function draw() {
+function playerFire() {
+  if(mouse.leftDown) {
+    if(playerProjectileDeath === 0) {
+      playerProjectileDeath = now + PLAYER_PROJECTILE_TTL;
+      playerProjectilePosition = playerGunPosition();
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function playerGunPosition() {
+  let gunPosition = {
+    x: playerShipPosition.x + playerSprite.width/2,
+    y: playerShipPosition.y };
+  return(gunPosition);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function drawDebugInfo() {
+  ctx.fillStyle = 'white';
+  ctx.fillText("now: " + now, 100, 50);  
+  ctx.fillText("death: " + playerProjectileDeath, 100, 100);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+function drawFPS() {
   ctx.fillStyle = 'white';
   ctx.fillText(timerAverageFPS.toString() + " FPS", 10, 50);
+}
 
+///////////////////////////////////////////////////////////////////////////////
+
+function drawPlayerShip() {
   drawImage(playerSprite, playerShipPosition);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function clear() {
-  //ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "black";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+function drawPlayerProjectile() {
+  if(playerProjectileDeath !== 0)
+    drawImage(playerProjectile, playerProjectilePosition);
 }
-
-///////////////////////////////////////////////////////////////////////////////
-
-/* FUNCTIONS GO HERE */
-
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -155,7 +224,7 @@ function loadAssets() {
 function timerTick() {
   timerFrameCount++;
 
-  let now = performance.now();
+  now = performance.now();
   let delta = now - timerLastCalculation;
   if(delta > TIMER_DURATION) {
     //timerAverageFPS = Math.trunc(TIMER_DURATION * (timerFrameCount / delta));
@@ -168,7 +237,8 @@ function timerTick() {
 ///////////////////////////////////////////////////////////////////////////////
 
 function gameLoop() {
-  timerTick();
+  timerTick();  
+  input();
   update();   
   clear();
   draw();
