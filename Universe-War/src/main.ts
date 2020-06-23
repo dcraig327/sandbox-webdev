@@ -12,7 +12,7 @@ namespace Main
 
 // GLOBALS ////////////////////////////////////////////////////////////////////
 
-const DEBUG = true;
+const DEBUG = false;
 
 let canvas: HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D;
@@ -61,8 +61,8 @@ function main() {
 ///////////////////////////////////////////////////////////////////////////////
 
 function input() {
-  playerMovement();
-  playerFire();
+  keyboardInput();
+  mouseInput();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -95,21 +95,29 @@ function clear() {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function playerMovement() {
-  if(keyboard.keyDown === "ArrowUp") {
-    playerShipPosition.y--;
-  } else if(keyboard.keyDown === "ArrowDown") {
-    playerShipPosition.y++;
-  } else if(keyboard.keyDown === "ArrowLeft") {
-    playerShipPosition.x--;
-  } else if(keyboard.keyDown === "ArrowRight") {
-    playerShipPosition.x++;
+function keyboardInput() {
+  switch(keyboard.keyDown) {
+    case "ArrowUp":
+      playerShipPosition.y--;
+      break;
+    case "ArrowDown":
+      playerShipPosition.y++;
+      break;
+    case "ArrowLeft":
+      playerShipPosition.x--;
+      break;
+    case "ArrowRight":
+      playerShipPosition.x++;
+      break;
+    default:
+      break;
   }
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function playerFire() {
+function mouseInput() {  
+//TODO: there's more to add
   if(mouse.leftDown) {
     if(playerProjectileDeath === 0) {
       playerProjectileDeath = now + PLAYER_PROJECTILE_TTL;
