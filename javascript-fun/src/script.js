@@ -5,10 +5,8 @@ const COLOR_YELLOW = "#FFFF00"
 const COLOR_BLUE = "#00FFFF"
 const COLOR_BACKGROUND = "#000000"
 
-//use
-
 
 let message;
 message = "Hello";
-//alert(message);
 
+//alert(message);
