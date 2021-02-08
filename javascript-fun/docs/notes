@@ -1,4 +1,45 @@
-use capitals as aliases for hard-coded const values
+use capitals as aliases for hard-coded const values ie:
 
 const pageLoadTime
 const COLOR_PINK
+
+A variable name should have a clean, obvious meaning describing the data it stores.
+
+HOWTO: Name variables & functions
+
+In a real project most o fthe time is spent modifying an dextending an existing code base. When we return to some code after doing something else for a while, it's much easier to find information that is well-labeled.
+
+Good rules:
+* use human-readable names like userName or shoppingCart
+* stay away from abbreviatsions or short names like a, x, i
+* make names maximally descriptive and consise. Bad names: data, value. Which says nothing.
+* agree on terms within your team and in your own mind. if a site visitor is called a "user" then we should name related variables currentUser or newUser instead of currentVisitor or newManInTown.
+
+
+
+* numbers
+  * int, float, Infinity, -Infinity, NaN, BitInt
+  * [-2**53-1, 2**53 -1]
+  * const bigInt = 123456789012345678901234567890n;
+* strings
+  * "", '', 
+  * let name = "user"; alert('hi ${user}');
+* boolean
+  * true, false
+* null
+* undefined
+* object
+* symbol
+* function
+
+
+typeof(..)
+
+
+
+-------------------------------------------------------------------------------
+2.6
+
+alert()
+prompt(title, [default-value])    null if ESC or Cancelled. 
+confirm()                         prompts OK/Cancel, returns true,false

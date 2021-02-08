@@ -10,3 +10,4 @@ let message;
 message = "Hello";
 
 //alert(message);
+let answer = confirm(message);
