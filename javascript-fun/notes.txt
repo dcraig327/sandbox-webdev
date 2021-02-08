@@ -1,4 +1,5 @@
-use capitals for colors 
+use capitals as aliases for hard-coded const values
+
 
 const pageLoadTime
 const COLOR_PINK
