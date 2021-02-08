@@ -1,0 +1,4 @@
+use capitals for colors 
+
+const pageLoadTime
+const COLOR_PINK
