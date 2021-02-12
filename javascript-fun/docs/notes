@@ -1,6 +1,5 @@
 use capitals as aliases for hard-coded const values ie:
 
-
 const pageLoadTime
 const COLOR_PINK
 
