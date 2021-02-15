@@ -77,20 +77,20 @@
 // }
 // console.log(century);
 
-const inputYear = "1991";
-console.log(`${Object.keys({ inputYear })}: ${inputYear}`, inputYear);
-console.log(Number(inputYear) + 18);
+// const inputYear = "1991";
+// console.log(`${Object.keys({ inputYear })}: ${inputYear}`, inputYear);
+// console.log(Number(inputYear) + 18);
 
-console.log(Number("Jonas"));
-console.log(typeof NaN);
-console.log(String(23), 23);
-// in console.log blue/purple is number, white/black is string
+// console.log(Number("Jonas"));
+// console.log(typeof NaN);
+// console.log(String(23), 23);
+// // in console.log blue/purple is number, white/black is string
 
-//type coercion
-console.log("I am " + 27 + " years old");
-console.log("23" - "10" - 3);
-console.log("23" * 2);
-console.log("23" > "18");
+// //type coercion
+// console.log("I am " + 27 + " years old");
+// console.log("23" - "10" - 3);
+// console.log("23" * 2);
+// console.log("23" > "18");
 
 // str + num    = str
 // str + bool   = str
@@ -126,8 +126,57 @@ console.log("23" > "18");
 
 // === strict,type coercion
 // == loose
-const age = 18;
-if (age === 18) {
-  console.log("You just became an adult.");
-}
+// const age = 18;
+// if (age === 18) {
+//   console.log("You just became an adult.");
+// }
+
+//NOTE: Select a string, then press ( to wrap in ()
+//NOTE: if <tab> then press tab to cycle between the snippet fields
+
+// const fav = 1;
+// //fav = Number(prompt("What's your favorite number"));
+// console.log(fav);
+
+// if (fav == 23) {
+//   console.log("23 cool");
+// } else if (fav == 7) {
+//   console.log("7 is cool");
+// } else {
+//   console.log("not 23 or 7");
+// }
+
+// // !== 
+// // !=
+
+// // if (fav !== 23) 
+// //   console.log('not 23');
+
+// if (fav !== 23) {
+//   console.log('not 23');
+// }
+
+// console.clear();
+
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+
+// console.log(hasDriversLicense && hasGoodVision);
+
+///////////////////////////////
+// expressions vs statements //
+///////////////////////////////
+//expressions produce values
+//statements translate our actions
+
+// const age = 23;
+// age >= 18 ? console.log('Beer good') : console.log('Water bad');
+
+//Author states ECMA annual releases is more of a release, not a version as they are backwards compat with all old code and only add new features
+
+//Development: use latest chromium
+//Production: use babel to transpile and polyfill your code (converting back to ES5 to ensure browser compatibility for all users)
+//ES5: from 2011, IE9 and all later browser
+// When a feature is in stage 3, browsers start implementing them as they are destined for release
+
 
