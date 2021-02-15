@@ -42,3 +42,13 @@ if (population > averageCountryPopulation) {
   console.log(`${country}'s population is ${averageCountryPopulation - population} million below average`);
 }
 
+/*
+  4
+  '617'
+  23
+  false
+  1143
+*/
+
+
+
