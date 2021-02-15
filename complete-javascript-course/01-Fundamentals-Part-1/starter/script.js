@@ -179,5 +179,3 @@
 //ES5: from 2011, IE9 and all later browser
 // When a feature is in stage 3, browsers start implementing them as they are destined for release
 
-
-
