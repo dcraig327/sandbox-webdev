@@ -1,0 +1,16 @@
+when learning a new skill, strategy is like creating a curriculum or a plan.
+scheduling is like creating accountability for achieving a plan.
+throughout the day small tasks will pop up and need to be categorized into their proper bucket and assigned a priority.
+an example task could even be decide where to document tasks or strategies on how to organize tasks.
+
+in this repo I feel it best to document any tasks related to the education or progress of video game production.
+I may have to use a seperate tool to do so, so unsure really how to link a trello board here, for example.
+
+I feel if my goal is to only work on this project when using the computer,
+that I should document everything related to my computer use here. But then there's matters of social media,
+or more specifically the addiction to negativity that is inherent in my being. I feel that addiction is necessary as
+it lets me understand 'how good I have it'. I feel more research needs to be invested back into self help topics
+and matters of motivation and better understanding my mind to truely be more productive.
+
+TODO: research self help, motivation, meditation. Schedule time listening to Alan Watts instead of silence.
+TODO: create a digital schedule (calendar), planner (trello), task bucket, 
