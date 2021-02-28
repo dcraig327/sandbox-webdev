@@ -1,0 +1,25 @@
+The issue in the video is fixed by using $0 below. In the documentation it says "$0 for the final cursor position":
+
+  "Print to console": {
+    "prefix": "cl",
+    "body": [
+      "console.log($0);"
+    ],
+    "description": "Log output to console"
+  }
+
+If you wanted to keep the $1, press C+Space to show the autocomplete menu. The main advantage of using a $0 or a $1 is that when you press Tab it will jump you to the next tab stop (end of the line in the example above).This is useful as hitting the down arrow takes longer then hitting C+Enter. To show a better example of how this is useful, take a look at vscode's built in if snippet from the list of all of their built in js snippets:
+
+https://github.com/microsoft/vscode/blob/main/extensions/javascript/snippets/javascript.code-snippets
+
+"If Statement": {
+    "prefix": "if",
+    "body": [
+            "if (${1:condition}) {",
+            "\t$0",
+            "}"
+    ],
+    "description": "If Statement"
+}
+
+It would be great if autocomplete just worked when using $1 and it's confusing to use, but I believe with practice it may make users faster. Try typing the following:if <tab> xyz <C+Space> <tab> <tab>(NOTE: This comment is WAY beyond the scope of this video: It is possible to remap Enter to act like C+Enter by editing keybindings.json, but it's a big change to get used to, and sadly the built-in vim extension functions identically to vim console which only accepts Enter and ignores any modifiers on Enter, a mistake in my opinion)
