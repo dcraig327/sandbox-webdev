@@ -1,30 +1,36 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
-
 
 .site {
   display: grid;
+  grid-template-rows: auto 1fr 3fr;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-areas: 
+    "title title title"
+    "main header header"
+    "main sidebar footer";
 }
 
+
 .masthead {
+  grid-area: header;
   background-color: mediumslateblue;
-  grid-column: 2/4;
-  grid-row: 2/3;
 }
 .page-title {
+  grid-area: title;
   background-color: lightskyblue;
 }
 .main-content {
+  grid-area: main;
   background-color: greenyellow;
 }
 .sidebar {
+  grid-area: sidebar;
   background-color: orange;
 }
 .footer {
+  grid-area: footer;
   background-color: blue;
 }
