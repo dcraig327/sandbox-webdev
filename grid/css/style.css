@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+
+.site {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.masthead {
+  background-color: mediumslateblue;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.page-title {
+  background-color: lightskyblue;
+}
+.main-content {
+  background-color: greenyellow;
+}
+.sidebar {
+  background-color: orange;
+}
+.footer {
+  background-color: blue;
+}
