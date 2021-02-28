@@ -1,0 +1,122 @@
+use capitals as aliases for hard-coded const values ie:
+
+const pageLoadTime
+const COLOR_PINK
+
+A variable name should have a clean, obvious meaning describing the data it stores.
+
+HOWTO: Name variables & functions
+
+In a real project most o fthe time is spent modifying an dextending an existing code base. When we return to some code after doing something else for a while, it's much easier to find information that is well-labeled.
+
+Good rules:
+* use human-readable names like userName or shoppingCart
+* stay away from abbreviatsions or short names like a, x, i
+* make names maximally descriptive and consise. Bad names: data, value. Which says nothing.
+* agree on terms within your team and in your own mind. if a site visitor is called a "user" then we should name related variables currentUser or newUser instead of currentVisitor or newManInTown.
+
+
+
+* numbers
+  * int, float, Infinity, -Infinity, NaN, BitInt
+  * [-2**53-1, 2**53 -1]
+  * const bigInt = 123456789012345678901234567890n;
+* strings
+  * "", '', 
+  * let name = "user"; alert('hi ${user}');
+* boolean
+  * true, false
+* null
+* undefined
+* object
+* symbol
+* function
+
+
+typeof(..)
+
+
+
+-------------------------------------------------------------------------------
+2.6
+
+alert()
+prompt(title, [default-value])    null if ESC or Cancelled. 
+confirm(msg)                         prompts OK/Cancel, returns true,false
+
+unary operator - one operand
+binary operator - two operands
+
+4 ** (1/2) = 2
+
+showing LR + evals and if one operator is string in the binary operation the other operator is converted into a string. + is the only operator that treats strings the following ways
+'1' + 2 = '12'
+2 + '1' = '21'
+2 + 2 + '1' = '41' not '221'
+'1' + 2 + 2 = '122' not '14' 
+
+if binary operation doesn't use +, output = number
+6 - '2' = 4
+'6' / '2' = 3
+
++operand = number
++'3' = 3
++true = 1
++"" = 0
+Number("") = 0
+
++"2" + +"3" = 5
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
+
+Precedence	Name	Sign
+…	…	…
+17	unary plus	+
+17	unary negation	-
+16	exponentiation	**
+15	multiplication	*
+15	division	/
+13	addition	+
+13	subtraction	-
+…	…	…
+3	assignment	=
+…	…	…
+
+
++= aka modify-and-assign, are available for all arithmetical and bitwise operators, same precedence as =
+
+x++ --x prefix or postfix increment or decrement operators
+let x = 1
+let y = x++ //1
+let z = ++y //2
+
+Keep inc/dec ops on their own line for readability
+
+bitwise operators: 
+AND ( & )
+OR ( | )
+XOR ( ^ )
+NOT ( ~ )
+LEFT SHIFT ( << )
+RIGHT SHIFT ( >> )
+ZERO-FILL RIGHT SHIFT ( >>> )
+
+comma
+let a = (1 + 2, 3 + 4);
+alert( a ); // 7 (the result of 3+4, 1+2 is trashed)
+
+
+
+The algorithm to compare two strings is simple:
+
+alert( 'Bruce' > 'Batman' ); // true
+alert( 'Bee' > 'Be' ); //true
+1. Compare the first character of both strings.
+2. If the first character from the first string is greater (or less) than the other string’s, then the first string is greater (or less) than the second. We’re done.
+3. Otherwise, if both strings’ first characters are the same, compare the second characters the same way.
+4. Repeat until the end of either string.
+5. If both strings end at the same length, then they are equal. Otherwise, the longer string is greater.
+
+
+
