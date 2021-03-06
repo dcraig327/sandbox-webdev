@@ -53,7 +53,7 @@ body {
   text-transform: uppercase;
 
   /* hiding the backface of the transformed polygon */
-  /* backface-visibility: hidden;  */
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -108,4 +108,24 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* pseudo class, state of selector */
+/* link, previously visited link */
+/* btn is inline element cause it's text*/
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block; /* applies box model */
+}
+
+.btn-white {
+  background-color: white;
+  color: #777;
+}
+
+.btn:hover,
+.btn:active {
 }
