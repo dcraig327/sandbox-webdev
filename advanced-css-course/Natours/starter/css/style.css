@@ -6,6 +6,13 @@
     * @keyframes, best to only animate two properties for browser performance: transform,opacity
 */
 
+/* how does :hover work on mobile??? 
+It’s @media(hover: hover) and (pointer: fine) {}, but the specification has not been finalized yet.
+For instance @media(hover: hover) will be true if the primary input can hover (e.g. a mouse cursor), and @media(any-pointer: coarse) will be true if any input is of limited accuracy (such as a touch input). */
+/* but how does CSS know if the user is interacting with the site using a touchscreen or a non-touchscreen?
+??? */
+
+/* ///////////////////////////////////////////////////////////////////////// */
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +53,7 @@ body {
   top: 40%; /* 50% of the parent for top,left*/
   left: 50%;
   transform: translate(-50%, -50%); /* 50% of this element */
+  text-align: center;
 }
 
 .heading-primary {
@@ -54,6 +62,7 @@ body {
 
   /* hiding the backface of the transformed polygon */
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -110,6 +119,20 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  /* question: what fps does this keyframes animation engine run at? */
+  /* goal: 15-30ms from 0-* opacity*/
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* pseudo class, state of selector */
 /* link, previously visited link */
 /* btn is inline element cause it's text*/
@@ -119,6 +142,19 @@ body {
   text-decoration: none;
   padding: 15px 40px;
   display: inline-block; /* applies box model */
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -126,6 +162,29 @@ body {
   color: #777;
 }
 
-.btn:hover,
-.btn:active {
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 1.2s;
+  animation-fill-mode: backwards; /* applies the @keyframe 0% styles before animation starts */
 }
