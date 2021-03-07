@@ -1,133 +1,133 @@
-"name": "Section 1: Welcome, Welcome, Welcome!",
-"name": "1. Welcome to the Most Advanced CSS Course Ever!",
-"name": "2. READ BEFORE YOU START!",
-"name": "3. Setting up Our Tools",
-"name": "Section 2: Natours Project — Setup and First Steps (Part 1)",
-"name": "4. Section Intro",
-"name": "5. Project Overview",
-"name": "6. Building the Header - Part 1",
-"name": "7. Building the Header - Part 2",
-"name": "8. Creating Cool CSS Animations",
-"name": "9. Building a Complex Animated Button - Part 1",
-"name": "10. Building a Complex Animated Button - Part 2",
-"name": "Section 3: How CSS Works: A Look Behind the Scenes",
-"name": "11. Section Intro",
-"name": "12. Three Pillars of Writing Good HTML and CSS (Never Forget Them!)",
-"name": "13. How CSS Works Behind the Scenes: An Overview",
-"name": "14. How CSS is Parsed, Part 1: The Cascade and Specificity",
-"name": "15. Specificity in Practice",
-"name": "16. How CSS is Parsed, Part 2: Value Processing",
-"name": "17. How CSS is Parsed, Part 3: Inheritance",
-"name": "18. Converting px to rem: An Effective Workflow",
-"name": "19. How CSS Renders a Website: The Visual Formatting Model",
-"name": "20. CSS Architecture, Components and BEM",
-"name": "21. Implementing BEM in the Natours Project",
-"name": "Section 4: Introduction to Sass and NPM",
-"name": "22. Section Intro",
-"name": "23. What is Sass?",
-"name": "24. First Steps with Sass: Variables and Nesting",
-"name": "25. First Steps with Sass: Mixins, Extends and Functions",
-"name": "26. A Brief Introduction to the Command Line",
-"name": "27. NPM Packages: Let's Install Sass Locally",
-"name": "28. NPM Scripts: Let's Write and Compile Sass Locally",
-"name": "29. The Easiest Way of Automatically Reloading a Page on File",
-"name": "Section 5: Natours Project — Using Advanced CSS and Sass (Part 2)",
-"name": "30. Section Intro",
-"name": "31. Converting Our CSS Code to Sass: Variables and Nesting",
-"name": "32. Implementing the 7-1 CSS Architecture with Sass",
-"name": "33. Review: Basic Principles of Responsive Design and Layout Types",
-"name": "34. Building a Custom Grid with Floats",
-"name": "35. Building the About Section - Part 1",
-"name": "36. Building the About Section - Part 2",
-"name": "37. Building the About Section - Part 3",
-"name": "38. Building the Features Section",
-"name": "39. Building the Tours Section - Part 1",
-"name": "40. Building the Tours Section - Part 2",
-"name": "41. Building the Tours Section - Part 3",
-"name": "42. Building the Stories Section - Part 1",
-"name": "43. Building the Stories Section - Part 2",
-"name": "44. Building the Stories Section - Part 3",
-"name": "45. Building the Booking Section - Part 1",
-"name": "46. Building the Booking Section - Part 2",
-"name": "47. Building the Booking Section - Part 3",
-"name": "48. Building the Footer",
-"name": "49. Building the Navigation - Part 1",
-"name": "50. Building the Navigation - Part 2",
-"name": "51. Building the Navigation - Part 3",
-"name": "52. Building a Pure CSS Popup - Part 1",
-"name": "53. Building a Pure CSS Popup - Part 2",
-"name": "Section 6: Natours Project — Advanced Responsive Design (Part 3)",
-"name": "54. Section Intro",
-"name": "55. Mobile-First vs Desktop-First and Breakpoints",
-"name": "56. Let's Use the Power of Sass Mixins to Write Media Queries",
-"name": "57. Writing Media Queries - Base, Typography and Layout",
-"name": "58. Writing Media Queries - Layout, About and Features Sections",
-"name": "59. Writing Media Queries - Tours, Stories and Booking Sections",
-"name": "60. An Overview of Responsive Images",
-"name": "61. Responsive Images in HTML - Art Direction and Density Switching",
-"name": "62. Responsive Images in HTML - Density and Resolution Switching",
-"name": "63. Responsive Images in CSS",
-"name": "64. Testing for Browser Support with @supports",
-"name": "65. Setting up a Simple Build Process with NPM Scripts",
-"name": "66. Wrapping up the Natours Project: Final Considerations",
-"name": "Section 7: Trillo Project — Master Flexbox!",
-"name": "67. Section Intro",
-"name": "68. Why Flexbox: An Overview of the Philosophy Behind Flexbox",
-"name": "69. A Basic Intro to Flexbox: The Flex Container",
-"name": "70. A Basic Intro to Flexbox: Flex Items",
-"name": "71. A Basic Intro to Flexbox: Adding More Flex Items",
-"name": "72. Project Overview",
-"name": "73. Defining Project Settings and Custom Properties",
-"name": "74. Building the Overall Layout",
-"name": "75. Building the Header - Part 1",
-"name": "76. Building the Header - Part 2",
-"name": "77. Building the Header - Part 3",
-"name": "78. Building the Navigation - Part 1",
-"name": "79. Building the Navigation - Part 2",
-"name": "80. Building the Hotel Overview - Part 1",
-"name": "81. Building the Hotel Overview - Part 2",
-"name": "82. Building the Description Section - Part 1",
-"name": "83. Building the Description Section - Part 2",
-"name": "84. Building the User Reviews Section",
-"name": "85. Building the CTA Section",
-"name": "86. Writing Media Queries - Part 1",
-"name": "87. Writing Media Queries - Part 2",
-"name": "88. Wrapping up the Trillo Project: Final Considerations",
-"name": "Section 8: A Quick Introduction to CSS Grid Layouts",
-"name": "89. Section Intro",
-"name": "90. Why CSS Grid: A Whole New Mindset",
-"name": "91. Quick Setup for This Section",
-"name": "92. Creating Our First Grid",
-"name": "93. Getting Familiar with the fr Unit",
-"name": "94. Positioning Grid Items",
-"name": "95. Spanning Grid Items",
-"name": "96. Grid Challenge",
-"name": "97. Grid Challenge: A Basic Solution",
-"name": "98. Naming Grid Lines",
-"name": "99. Naming Grid Areas",
-"name": "100. Implicit Grids vs. Explicit Grids",
-"name": "101. Aligning Grid Items",
-"name": "102. Aligning Tracks",
-"name": "103. Using min-content, max-content and the minmax() function",
-"name": "104. Responsive Layouts with auto-fit and auto-fill",
-"name": "Section 9: Nexter Project — Master CSS Grid Layouts!",
-"name": "105. Project Overview and Setup",
-"name": "106. Building the Overall Layout - Part 1",
-"name": "107. Building the Overall Layout - Part 2",
-"name": "108. Building the Features Section - Part 1",
-"name": "109. Building the Features Section - Part 2",
-"name": "110. Building the Story Section - Part 1",
-"name": "111. Building the Story Section - Part 2",
-"name": "112. Building the Homes Section - Part 1",
-"name": "113. Building the Homes Section - Part 2",
-"name": "114. Building the Gallery - Part 1",
-"name": "115. Building the Gallery - Part 2",
-"name": "116. Building the Footer",
-"name": "117. Building the Sidebar",
-"name": "118. Building the Header - Part 1",
-"name": "119. Building the Header - Part 2",
-"name": "120. Building the Realtors Section",
-"name": "121. Writing Media Queries - Part 1",
-"name": "122. Writing Media Queries - Part 2",
-"name": "123. Browser Support for CSS Grid",
-"name": "124. Wrapping up the Nexter Project: Final Considerations",
+Section 1: Welcome, Welcome, Welcome!
+- [ ] 1. Welcome to the Most Advanced CSS Course Ever!
+- [ ] 2. READ BEFORE YOU START!
+- [ ] 3. Setting up Our Tools
+Section 2: Natours Project — Setup and First Steps (Part 1)
+- [ ] 4. Section Intro
+- [ ] 5. Project Overview
+- [ ] 6. Building the Header - Part 1
+- [ ] 7. Building the Header - Part 2
+- [ ] 8. Creating Cool CSS Animations
+- [ ] 9. Building a Complex Animated Button - Part 1
+- [ ] 10. Building a Complex Animated Button - Part 2
+Section 3: How CSS Works: A Look Behind the Scenes
+- [ ] 11. Section Intro
+- [ ] 12. Three Pillars of Writing Good HTML and CSS (Never Forget Them!)
+- [ ] 13. How CSS Works Behind the Scenes: An Overview
+- [ ] 14. How CSS is Parsed, Part 1: The Cascade and Specificity
+- [ ] 15. Specificity in Practice
+- [ ] 16. How CSS is Parsed, Part 2: Value Processing
+- [ ] 17. How CSS is Parsed, Part 3: Inheritance
+- [ ] 18. Converting px to rem: An Effective Workflow
+- [ ] 19. How CSS Renders a Website: The Visual Formatting Model
+- [ ] 20. CSS Architecture, Components and BEM
+- [ ] 21. Implementing BEM in the Natours Project
+Section 4: Introduction to Sass and NPM
+- [ ] 22. Section Intro
+- [ ] 23. What is Sass?
+- [ ] 24. First Steps with Sass: Variables and Nesting
+- [ ] 25. First Steps with Sass: Mixins, Extends and Functions
+- [ ] 26. A Brief Introduction to the Command Line
+- [ ] 27. NPM Packages: Let's Install Sass Locally
+- [ ] 28. NPM Scripts: Let's Write and Compile Sass Locally
+- [ ] 29. The Easiest Way of Automatically Reloading a Page on File
+Section 5: Natours Project — Using Advanced CSS and Sass (Part 2)
+- [ ] 30. Section Intro
+- [ ] 31. Converting Our CSS Code to Sass: Variables and Nesting
+- [ ] 32. Implementing the 7-1 CSS Architecture with Sass
+- [ ] 33. Review: Basic Principles of Responsive Design and Layout Types
+- [ ] 34. Building a Custom Grid with Floats
+- [ ] 35. Building the About Section - Part 1
+- [ ] 36. Building the About Section - Part 2
+- [ ] 37. Building the About Section - Part 3
+- [ ] 38. Building the Features Section
+- [ ] 39. Building the Tours Section - Part 1
+- [ ] 40. Building the Tours Section - Part 2
+- [ ] 41. Building the Tours Section - Part 3
+- [ ] 42. Building the Stories Section - Part 1
+- [ ] 43. Building the Stories Section - Part 2
+- [ ] 44. Building the Stories Section - Part 3
+- [ ] 45. Building the Booking Section - Part 1
+- [ ] 46. Building the Booking Section - Part 2
+- [ ] 47. Building the Booking Section - Part 3
+- [ ] 48. Building the Footer
+- [ ] 49. Building the Navigation - Part 1
+- [ ] 50. Building the Navigation - Part 2
+- [ ] 51. Building the Navigation - Part 3
+- [ ] 52. Building a Pure CSS Popup - Part 1
+- [ ] 53. Building a Pure CSS Popup - Part 2
+Section 6: Natours Project — Advanced Responsive Design (Part 3)
+- [ ] 54. Section Intro
+- [ ] 55. Mobile-First vs Desktop-First and Breakpoints
+- [ ] 56. Let's Use the Power of Sass Mixins to Write Media Queries
+- [ ] 57. Writing Media Queries - Base, Typography and Layout
+- [ ] 58. Writing Media Queries - Layout, About and Features Sections
+- [ ] 59. Writing Media Queries - Tours, Stories and Booking Sections
+- [ ] 60. An Overview of Responsive Images
+- [ ] 61. Responsive Images in HTML - Art Direction and Density Switching
+- [ ] 62. Responsive Images in HTML - Density and Resolution Switching
+- [ ] 63. Responsive Images in CSS
+- [ ] 64. Testing for Browser Support with @supports
+- [ ] 65. Setting up a Simple Build Process with NPM Scripts
+- [ ] 66. Wrapping up the Natours Project: Final Considerations
+Section 7: Trillo Project — Master Flexbox!
+- [ ] 67. Section Intro
+- [ ] 68. Why Flexbox: An Overview of the Philosophy Behind Flexbox
+- [ ] 69. A Basic Intro to Flexbox: The Flex Container
+- [ ] 70. A Basic Intro to Flexbox: Flex Items
+- [ ] 71. A Basic Intro to Flexbox: Adding More Flex Items
+- [ ] 72. Project Overview
+- [ ] 73. Defining Project Settings and Custom Properties
+- [ ] 74. Building the Overall Layout
+- [ ] 75. Building the Header - Part 1
+- [ ] 76. Building the Header - Part 2
+- [ ] 77. Building the Header - Part 3
+- [ ] 78. Building the Navigation - Part 1
+- [ ] 79. Building the Navigation - Part 2
+- [ ] 80. Building the Hotel Overview - Part 1
+- [ ] 81. Building the Hotel Overview - Part 2
+- [ ] 82. Building the Description Section - Part 1
+- [ ] 83. Building the Description Section - Part 2
+- [ ] 84. Building the User Reviews Section
+- [ ] 85. Building the CTA Section
+- [ ] 86. Writing Media Queries - Part 1
+- [ ] 87. Writing Media Queries - Part 2
+- [ ] 88. Wrapping up the Trillo Project: Final Considerations
+Section 8: A Quick Introduction to CSS Grid Layouts
+- [ ] 89. Section Intro
+- [ ] 90. Why CSS Grid: A Whole New Mindset
+- [ ] 91. Quick Setup for This Section
+- [ ] 92. Creating Our First Grid
+- [ ] 93. Getting Familiar with the fr Unit
+- [ ] 94. Positioning Grid Items
+- [ ] 95. Spanning Grid Items
+- [ ] 96. Grid Challenge
+- [ ] 97. Grid Challenge: A Basic Solution
+- [ ] 98. Naming Grid Lines
+- [ ] 99. Naming Grid Areas
+- [ ] 100. Implicit Grids vs. Explicit Grids
+- [ ] 101. Aligning Grid Items
+- [ ] 102. Aligning Tracks
+- [ ] 103. Using min-content, max-content and the minmax() function
+- [ ] 104. Responsive Layouts with auto-fit and auto-fill
+Section 9: Nexter Project — Master CSS Grid Layouts!
+- [ ] 105. Project Overview and Setup
+- [ ] 106. Building the Overall Layout - Part 1
+- [ ] 107. Building the Overall Layout - Part 2
+- [ ] 108. Building the Features Section - Part 1
+- [ ] 109. Building the Features Section - Part 2
+- [ ] 110. Building the Story Section - Part 1
+- [ ] 111. Building the Story Section - Part 2
+- [ ] 112. Building the Homes Section - Part 1
+- [ ] 113. Building the Homes Section - Part 2
+- [ ] 114. Building the Gallery - Part 1
+- [ ] 115. Building the Gallery - Part 2
+- [ ] 116. Building the Footer
+- [ ] 117. Building the Sidebar
+- [ ] 118. Building the Header - Part 1
+- [ ] 119. Building the Header - Part 2
+- [ ] 120. Building the Realtors Section
+- [ ] 121. Writing Media Queries - Part 1
+- [ ] 122. Writing Media Queries - Part 2
+- [ ] 123. Browser Support for CSS Grid
+- [ ] 124. Wrapping up the Nexter Project: Final Considerations

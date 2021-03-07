@@ -4,3 +4,15 @@
 * maintainable and scalable code
 * web performance
 
+
+Loading:
+*parse html
+  * create dom
+  * load css
+    * resolve conflicts (cascade)
+    * process final css values
+    * create cssom
+  * render tree
+    * website rendering the visual formatting model
+
+

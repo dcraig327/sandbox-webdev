@@ -11,11 +11,8 @@ It’s @media(hover: hover) and (pointer: fine) {}, but the specification has no
 For instance @media(hover: hover) will be true if the primary input can hover (e.g. a mouse cursor), and @media(any-pointer: coarse) will be true if any input is of limited accuracy (such as a touch input). */
 /* but how does CSS know if the user is interacting with the site using a touchscreen or a non-touchscreen?
 ??? */
-<blockquoteclass="trello-card"><ahref="https://trello.com/c/PLOTq5LG/8-advanced-css-and-sass-flexbox-grid-animations-and-more">Advanced CSS and Sass:
-  Flexbox, Grid,
-  Animations and More!</a></blockquoteclass=><script src=
-    "https://p.trellocdn.com/embed.min.js" ></script>
-    /* ///////////////////////////////////////////////////////////////////////// */ * {
+/* ///////////////////////////////////////////////////////////////////////// */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* fix calculation*/
@@ -65,6 +62,8 @@ body {
   /* hiding the backface of the transformed polygon */
   backface-visibility: hidden;
   margin-bottom: 60px;
+  /* display: block; */
+  position: relative;
 }
 
 .heading-primary-main {
@@ -76,6 +75,37 @@ body {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+.heading-primary-main-drag::after {
+  content: "";
+  animation: addContent 1s;
+  animation-fill-mode: backwards; /* applies the @keyframe 0% styles before animation starts */
+}
+
+/* transition: all 0.4s; */
+@keyframes addContent {
+  0% {
+    content: "Outdoors";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 10%;
+    z-index: -1;
+  }
+
+  100% {
+    content: "Outdoors";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 .heading-primary-sub {
