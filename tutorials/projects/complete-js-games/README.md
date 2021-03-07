@@ -5,5 +5,3 @@
 <br>
 
 ## Video Game Projects
-
-* first
