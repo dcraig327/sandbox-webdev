@@ -1,0 +1,1375 @@
+{
+  "id": "603b37a0010bc4252d3a1fff",
+  "name": "Section 1: Welcome, Welcome, Welcome!",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 16384,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b37a0010bc4252d3a1fff",
+      "state": "complete",
+      "id": "603b37a7047f4869e1aff798",
+      "name": "1. Welcome to the Most Advanced CSS Course Ever!",
+      "nameData": null,
+      "pos": 16549,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37a0010bc4252d3a1fff",
+      "state": "complete",
+      "id": "603b37a7dd815a3cfcf18c17",
+      "name": "2. READ BEFORE YOU START!",
+      "nameData": null,
+      "pos": 32989,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37a0010bc4252d3a1fff",
+      "state": "complete",
+      "id": "603b37a744d6758eb2ce549f",
+      "name": "3. Setting up Our Tools",
+      "nameData": null,
+      "pos": 49698,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b37b3a1a29c888e07ccdc",
+  "name": "Section 2: Natours Project — Setup and First Steps (Part 1)",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 8192,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c7ba9754549d9281b7",
+      "name": "4. Section Intro",
+      "nameData": null,
+      "pos": 17056,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c78560ce8e3bdc68f5",
+      "name": "5. Project Overview",
+      "nameData": null,
+      "pos": 33521,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c77820414476973fb5",
+      "name": "6. Building the Header - Part 1",
+      "nameData": null,
+      "pos": 50051,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c713e21b575a9a785d",
+      "name": "7. Building the Header - Part 2",
+      "nameData": null,
+      "pos": 66942,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c8ae5f868e53e5a3d0",
+      "name": "8. Creating Cool CSS Animations",
+      "nameData": null,
+      "pos": 83818,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c8f76e8e6c0ba2391b",
+      "name": "9. Building a Complex Animated Button - Part 1",
+      "nameData": null,
+      "pos": 101015,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37b3a1a29c888e07ccdc",
+      "state": "complete",
+      "id": "603b37c82adc13797b2d29fd",
+      "name": "10. Building a Complex Animated Button - Part 2",
+      "nameData": null,
+      "pos": 118186,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b37ce43d73f1d1367d080",
+  "name": "Section 3: How CSS Works: A Look Behind the Scenes",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 4096,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e3447fb77a8723fe62",
+      "name": "11. Section Intro",
+      "nameData": null,
+      "pos": 16666,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e3de05da4e5c6eb731",
+      "name": "12. Three Pillars of Writing Good HTML and CSS (Never Forget Them!)",
+      "nameData": { "emoji": {} },
+      "pos": 33207,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e3d4d0c98a88488c1f",
+      "name": "13. How CSS Works Behind the Scenes: An Overview",
+      "nameData": null,
+      "pos": 67133,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e35addf957bba923b9",
+      "name": "14. How CSS is Parsed, Part 1: The Cascade and Specificity",
+      "nameData": null,
+      "pos": 83689,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e45a386a682ae27589",
+      "name": "15. Specificity in Practice",
+      "nameData": null,
+      "pos": 101096,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e4b009cb72442360b1",
+      "name": "16. How CSS is Parsed, Part 2: Value Processing",
+      "nameData": null,
+      "pos": 118210,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e4f219967e849dea69",
+      "name": "17. How CSS is Parsed, Part 3: Inheritance",
+      "nameData": null,
+      "pos": 135152,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e41b337975dcc03798",
+      "name": "18. Converting px to rem: An Effective Workflow",
+      "nameData": null,
+      "pos": 152517,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e4b31fbd0fc5cdb848",
+      "name": "19. How CSS Renders a Website: The Visual Formatting Model",
+      "nameData": null,
+      "pos": 169250,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e53887e4869898b40a",
+      "name": "20. CSS Architecture, Components and BEM",
+      "nameData": null,
+      "pos": 186470,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37ce43d73f1d1367d080",
+      "state": "incomplete",
+      "id": "603b37e526201445071612fe",
+      "name": "21. Implementing BEM in the Natours Project",
+      "nameData": null,
+      "pos": 202903,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b37f4eada5e2d5d8a06d5",
+  "name": "Section 4: Introduction to Sass and NPM",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 65536,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b37ffc1261176a4d2e357",
+      "name": "22. Section Intro",
+      "nameData": null,
+      "pos": 17258,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b37ffe9feb468af8bfde2",
+      "name": "23. What is Sass?",
+      "nameData": null,
+      "pos": 34061,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b37ff7b1e74237ef49fa3",
+      "name": "24. First Steps with Sass: Variables and Nesting",
+      "nameData": null,
+      "pos": 51193,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b38006702cf0dbe79e86a",
+      "name": "25. First Steps with Sass: Mixins, Extends and Functions",
+      "nameData": null,
+      "pos": 68385,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b38000c860e7e466f2aed",
+      "name": "26. A Brief Introduction to the Command Line",
+      "nameData": null,
+      "pos": 85289,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b380013e21b575a9a7f2e",
+      "name": "27. NPM Packages: Let's Install Sass Locally",
+      "nameData": null,
+      "pos": 102035,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b3800ef2d947a9bf09f4c",
+      "name": "28. NPM Scripts: Let's Write and Compile Sass Locally",
+      "nameData": null,
+      "pos": 118561,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b37f4eada5e2d5d8a06d5",
+      "state": "incomplete",
+      "id": "603b380007a0cc2fb320cfd1",
+      "name": "29. The Easiest Way of Automatically Reloading a Page on File",
+      "nameData": null,
+      "pos": 135188,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b380bf8265611b39c1825",
+  "name": "Section 5: Natours Project — Using Advanced CSS and Sass (Part 2)",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 81920,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3823b46fbd873f300bb2",
+      "name": "30. Section Intro",
+      "nameData": null,
+      "pos": 16492,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38236d5eea4f88689ab8",
+      "name": "31. Converting Our CSS Code to Sass: Variables and Nesting",
+      "nameData": null,
+      "pos": 33147,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38237579e853f0aa67ee",
+      "name": "32. Implementing the 7-1 CSS Architecture with Sass",
+      "nameData": null,
+      "pos": 50156,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b382417d9f37ba4970628",
+      "name": "33. Review: Basic Principles of Responsive Design and Layout Types",
+      "nameData": { "emoji": {} },
+      "pos": 67261,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38240ef2271e54f86ecf",
+      "name": "34. Building a Custom Grid with Floats",
+      "nameData": null,
+      "pos": 100536,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3824073e027a8af765d5",
+      "name": "35. Building the About Section - Part 1",
+      "nameData": null,
+      "pos": 117030,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38242ac018549e85147c",
+      "name": "36. Building the About Section - Part 2",
+      "nameData": null,
+      "pos": 133874,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3825f0301b2f65276e9d",
+      "name": "37. Building the About Section - Part 3",
+      "nameData": null,
+      "pos": 151243,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3825fbb08c1e8d7ffc14",
+      "name": "38. Building the Features Section",
+      "nameData": null,
+      "pos": 167754,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38257d34b23e64d66d1c",
+      "name": "39. Building the Tours Section - Part 1",
+      "nameData": null,
+      "pos": 184224,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38255a9640040725cec1",
+      "name": "40. Building the Tours Section - Part 2",
+      "nameData": null,
+      "pos": 201199,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3825ef57fe8aa9af2af5",
+      "name": "41. Building the Tours Section - Part 3",
+      "nameData": null,
+      "pos": 217844,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3826ca28a5793b6f190b",
+      "name": "42. Building the Stories Section - Part 1",
+      "nameData": null,
+      "pos": 234810,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38269f30cf57726768c9",
+      "name": "43. Building the Stories Section - Part 2",
+      "nameData": null,
+      "pos": 251473,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38269b53813c66428221",
+      "name": "44. Building the Stories Section - Part 3",
+      "nameData": null,
+      "pos": 268383,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3826c3ea3b79da55a212",
+      "name": "45. Building the Booking Section - Part 1",
+      "nameData": null,
+      "pos": 285646,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38265b93820f07b1cd1a",
+      "name": "46. Building the Booking Section - Part 2",
+      "nameData": null,
+      "pos": 302354,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3827ccf9ed1e533908bb",
+      "name": "47. Building the Booking Section - Part 3",
+      "nameData": null,
+      "pos": 319525,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3827f6b33d78e3ec0391",
+      "name": "48. Building the Footer",
+      "nameData": null,
+      "pos": 336093,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3827a30c5f7a101cc6e5",
+      "name": "49. Building the Navigation - Part 1",
+      "nameData": null,
+      "pos": 353389,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b38271676bb8ff3c7d2f9",
+      "name": "50. Building the Navigation - Part 2",
+      "nameData": null,
+      "pos": 369929,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3827542e3f26c2bdf905",
+      "name": "51. Building the Navigation - Part 3",
+      "nameData": null,
+      "pos": 387256,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3828b14aae68f452e37f",
+      "name": "52. Building a Pure CSS Popup - Part 1",
+      "nameData": null,
+      "pos": 404485,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b380bf8265611b39c1825",
+      "state": "incomplete",
+      "id": "603b3828e633877a8956bfe4",
+      "name": "53. Building a Pure CSS Popup - Part 2",
+      "nameData": null,
+      "pos": 421339,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b382dcc28b787b23bb66f",
+  "name": "Section 6: Natours Project — Advanced Responsive Design (Part 3)",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 98304,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b38414f9d320e695b8ef3",
+      "name": "54. Section Intro",
+      "nameData": null,
+      "pos": 16546,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3841f676ae45168df278",
+      "name": "55. Mobile-First vs Desktop-First and Breakpoints",
+      "nameData": null,
+      "pos": 33562,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b38416f3d4e2f8522cb5c",
+      "name": "56. Let's Use the Power of Sass Mixins to Write Media Queries",
+      "nameData": null,
+      "pos": 50826,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3842ed4e741368b85c41",
+      "name": "57. Writing Media Queries - Base, Typography and Layout",
+      "nameData": null,
+      "pos": 67809,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3842dcb27c2c220c8088",
+      "name": "58. Writing Media Queries - Layout, About and Features Sections",
+      "nameData": { "emoji": {} },
+      "pos": 84488,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3842c9c3c330ec45185d",
+      "name": "59. Writing Media Queries - Tours, Stories and Booking Sections",
+      "nameData": { "emoji": {} },
+      "pos": 117936,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3843a722a27baad46551",
+      "name": "60. An Overview of Responsive Images",
+      "nameData": null,
+      "pos": 151422,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3843883ef52b8c712e7c",
+      "name": "61. Responsive Images in HTML - Art Direction and Density Switching",
+      "nameData": { "emoji": {} },
+      "pos": 168413,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b38430926f97e2e9ab8d3",
+      "name": "62. Responsive Images in HTML - Density and Resolution Switching",
+      "nameData": { "emoji": {} },
+      "pos": 201716,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3844c378bc4d130a4cf7",
+      "name": "63. Responsive Images in CSS",
+      "nameData": null,
+      "pos": 236150,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b3844766e5f2463fe957c",
+      "name": "64. Testing for Browser Support with @supports",
+      "nameData": null,
+      "pos": 252625,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b38449c3e2954a4b695c2",
+      "name": "65. Setting up a Simple Build Process with NPM Scripts",
+      "nameData": null,
+      "pos": 269898,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b382dcc28b787b23bb66f",
+      "state": "incomplete",
+      "id": "603b38449f30f91dc1d4cec8",
+      "name": "66. Wrapping up the Natours Project: Final Considerations",
+      "nameData": null,
+      "pos": 286770,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b385909f26d4d0c6d4ab4",
+  "name": "Section 7: Trillo Project — Master Flexbox!",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 114688,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3870cba46313bfa3f25a",
+      "name": "67. Section Intro",
+      "nameData": null,
+      "pos": 16702,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b387049217b8a4d74bb68",
+      "name": "68. Why Flexbox: An Overview of the Philosophy Behind Flexbox",
+      "nameData": { "emoji": {} },
+      "pos": 33654,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3870156a488dc6bb8624",
+      "name": "69. A Basic Intro to Flexbox: The Flex Container",
+      "nameData": null,
+      "pos": 67754,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3871a3ae187d5dab641f",
+      "name": "70. A Basic Intro to Flexbox: Flex Items",
+      "nameData": null,
+      "pos": 84228,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b387113e21b575a9a867c",
+      "name": "71. A Basic Intro to Flexbox: Adding More Flex Items",
+      "nameData": null,
+      "pos": 100715,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38717a6fb773591fc881",
+      "name": "72. Project Overview",
+      "nameData": null,
+      "pos": 117822,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3871b34eb37dca6cfe71",
+      "name": "73. Defining Project Settings and Custom Properties",
+      "nameData": null,
+      "pos": 134711,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38717d85232194f61c24",
+      "name": "74. Building the Overall Layout",
+      "nameData": null,
+      "pos": 151957,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b387236fa0c405d421bb7",
+      "name": "75. Building the Header - Part 1",
+      "nameData": null,
+      "pos": 168650,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3872ca2eb4580bc0e895",
+      "name": "76. Building the Header - Part 2",
+      "nameData": null,
+      "pos": 185137,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3872725fc85f0289e51b",
+      "name": "77. Building the Header - Part 3",
+      "nameData": null,
+      "pos": 201653,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3872fe51a103315a2f75",
+      "name": "78. Building the Navigation - Part 1",
+      "nameData": null,
+      "pos": 218334,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38734d96713bc85fa880",
+      "name": "79. Building the Navigation - Part 2",
+      "nameData": null,
+      "pos": 235123,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38730b3f5808c65ec3ff",
+      "name": "80. Building the Hotel Overview - Part 1",
+      "nameData": null,
+      "pos": 252244,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38734c70ea4ab75f6168",
+      "name": "81. Building the Hotel Overview - Part 2",
+      "nameData": null,
+      "pos": 268943,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38734516098f80df1799",
+      "name": "82. Building the Description Section - Part 1",
+      "nameData": null,
+      "pos": 285654,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b387373a0e76ea1591b96",
+      "name": "83. Building the Description Section - Part 2",
+      "nameData": null,
+      "pos": 302297,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b387495fc611d7158d5a6",
+      "name": "84. Building the User Reviews Section",
+      "nameData": null,
+      "pos": 319177,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3874798ead7e5a6202fe",
+      "name": "85. Building the CTA Section",
+      "nameData": null,
+      "pos": 336300,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3874a0cc62632a4e178a",
+      "name": "86. Writing Media Queries - Part 1",
+      "nameData": null,
+      "pos": 353693,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b38743cce8021a33ac01a",
+      "name": "87. Writing Media Queries - Part 2",
+      "nameData": null,
+      "pos": 370413,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b385909f26d4d0c6d4ab4",
+      "state": "incomplete",
+      "id": "603b3874928d196f18631b89",
+      "name": "88. Wrapping up the Trillo Project: Final Considerations",
+      "nameData": null,
+      "pos": 387605,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b387cfd1ee48a7f4d4b07",
+  "name": "Section 8: A Quick Introduction to CSS Grid Layouts",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 131072,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388d298bb64136c83fa3",
+      "name": "89. Section Intro",
+      "nameData": null,
+      "pos": 17155,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388d94c263851b6017f5",
+      "name": "90. Why CSS Grid: A Whole New Mindset",
+      "nameData": null,
+      "pos": 33983,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388dbfd4d07d50f6ee99",
+      "name": "91. Quick Setup for This Section",
+      "nameData": null,
+      "pos": 50557,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388de408720eaab2c262",
+      "name": "92. Creating Our First Grid",
+      "nameData": null,
+      "pos": 67873,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388e2d5e9e2d83b290d6",
+      "name": "93. Getting Familiar with the fr Unit",
+      "nameData": null,
+      "pos": 85223,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388e3a98d130fa829eaa",
+      "name": "94. Positioning Grid Items",
+      "nameData": null,
+      "pos": 102248,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388e3fc67363dedb6a77",
+      "name": "95. Spanning Grid Items",
+      "nameData": null,
+      "pos": 119321,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388e5211228b8a5166f8",
+      "name": "96. Grid Challenge",
+      "nameData": null,
+      "pos": 135809,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388f67b12c25247bd7e4",
+      "name": "97. Grid Challenge: A Basic Solution",
+      "nameData": null,
+      "pos": 152977,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388f3c91c629cd39aa87",
+      "name": "98. Naming Grid Lines",
+      "nameData": null,
+      "pos": 169541,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388f7f297a3b61736597",
+      "name": "99. Naming Grid Areas",
+      "nameData": null,
+      "pos": 185936,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388f4c025d4a13b65660",
+      "name": "100. Implicit Grids vs. Explicit Grids",
+      "nameData": null,
+      "pos": 202877,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b388f2fa7b92ae391b04b",
+      "name": "101. Aligning Grid Items",
+      "nameData": null,
+      "pos": 220283,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b38901b932479d95f9b28",
+      "name": "102. Aligning Tracks",
+      "nameData": null,
+      "pos": 237583,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b38902f952f2db3f640ac",
+      "name": "103. Using min-content, max-content and the minmax() function",
+      "nameData": null,
+      "pos": 254155,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b387cfd1ee48a7f4d4b07",
+      "state": "incomplete",
+      "id": "603b38909240ff2515fdad52",
+      "name": "104. Responsive Layouts with auto-fit and auto-fill",
+      "nameData": null,
+      "pos": 271268,
+      "due": null,
+      "idMember": null
+    }
+  ]
+},
+{
+  "id": "603b389bb2eaee24ee45be2c",
+  "name": "Section 9: Nexter Project — Master CSS Grid Layouts!",
+  "idCard": "60306bde790c5538b2c1a2e1",
+  "pos": 147456,
+  "creationMethod": null,
+  "idBoard": "602cabb63b14e68be4ff7a51",
+  "limits": {
+    "checkItems": {
+      "perChecklist": { "status": "ok", "disableAt": 200, "warnAt": 180 }
+    }
+  },
+  "checkItems": [
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38aefb89ac60ce88d61b",
+      "name": "105. Project Overview and Setup",
+      "nameData": null,
+      "pos": 16666,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38ae66805e527d0d4bf5",
+      "name": "106. Building the Overall Layout - Part 1",
+      "nameData": null,
+      "pos": 33998,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38af5213798a74ec4c3b",
+      "name": "107. Building the Overall Layout - Part 2",
+      "nameData": null,
+      "pos": 51147,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38afeec24a1d1a3a33ec",
+      "name": "108. Building the Features Section - Part 1",
+      "nameData": null,
+      "pos": 67728,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38af624d3056e06df35b",
+      "name": "109. Building the Features Section - Part 2",
+      "nameData": null,
+      "pos": 84168,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38af9906cf32c822a077",
+      "name": "110. Building the Story Section - Part 1",
+      "nameData": null,
+      "pos": 100930,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b084f1c46921fe544c",
+      "name": "111. Building the Story Section - Part 2",
+      "nameData": null,
+      "pos": 118123,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b008041968b62e5485",
+      "name": "112. Building the Homes Section - Part 1",
+      "nameData": null,
+      "pos": 135175,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b08661916908b919ee",
+      "name": "113. Building the Homes Section - Part 2",
+      "nameData": null,
+      "pos": 151721,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b08e786452b37d4511",
+      "name": "114. Building the Gallery - Part 1",
+      "nameData": null,
+      "pos": 168167,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b24f9d320e695b92c3",
+      "name": "115. Building the Gallery - Part 2",
+      "nameData": null,
+      "pos": 184630,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b218d1a67e7bd48f58",
+      "name": "116. Building the Footer",
+      "nameData": null,
+      "pos": 201658,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b2c3f5f42167cd97c2",
+      "name": "117. Building the Sidebar",
+      "nameData": null,
+      "pos": 218419,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b30458e720b213ac52",
+      "name": "118. Building the Header - Part 1",
+      "nameData": null,
+      "pos": 235401,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b3485e4f7a7e0a7790",
+      "name": "119. Building the Header - Part 2",
+      "nameData": null,
+      "pos": 251940,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b386096f72684f1ab2",
+      "name": "120. Building the Realtors Section",
+      "nameData": null,
+      "pos": 268579,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b377c2673389c1e9d3",
+      "name": "121. Writing Media Queries - Part 1",
+      "nameData": null,
+      "pos": 285184,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b3959a2123bdd5371f",
+      "name": "122. Writing Media Queries - Part 2",
+      "nameData": null,
+      "pos": 302543,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b44516098f80df1ae8",
+      "name": "123. Browser Support for CSS Grid",
+      "nameData": null,
+      "pos": 319717,
+      "due": null,
+      "idMember": null
+    },
+    {
+      "idChecklist": "603b389bb2eaee24ee45be2c",
+      "state": "incomplete",
+      "id": "603b38b4ea251b3aac4d7bba",
+      "name": "124. Wrapping up the Nexter Project: Final Considerations",
+      "nameData": null,
+      "pos": 337043,
+      "due": null,
+      "idMember": null
+    }
+  ]
+}

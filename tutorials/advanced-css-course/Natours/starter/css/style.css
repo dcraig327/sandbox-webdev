@@ -11,9 +11,11 @@ It’s @media(hover: hover) and (pointer: fine) {}, but the specification has no
 For instance @media(hover: hover) will be true if the primary input can hover (e.g. a mouse cursor), and @media(any-pointer: coarse) will be true if any input is of limited accuracy (such as a touch input). */
 /* but how does CSS know if the user is interacting with the site using a touchscreen or a non-touchscreen?
 ??? */
-
-/* ///////////////////////////////////////////////////////////////////////// */
-* {
+<blockquoteclass="trello-card"><ahref="https://trello.com/c/PLOTq5LG/8-advanced-css-and-sass-flexbox-grid-animations-and-more">Advanced CSS and Sass:
+  Flexbox, Grid,
+  Animations and More!</a></blockquoteclass=><script src=
+    "https://p.trellocdn.com/embed.min.js" ></script>
+    /* ///////////////////////////////////////////////////////////////////////// */ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* fix calculation*/
