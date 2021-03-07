@@ -1,0 +1,6 @@
+
+3 principles: 
+* responsive design
+* maintainable and scalable code
+* web performance
+
