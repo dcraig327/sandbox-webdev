@@ -1,0 +1,29 @@
+element properties (width in px)
+
+
+
+
+GOOGLE FONTS
+------------------------
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+
+
+CSS properties
+-------------------
+color
+font-size
+font-family: monospace, serif, sans-serif
+width
+border-color
+border-width
+border-style
+
+
+
+TYPE
+-------
+px
+
+
+
