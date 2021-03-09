@@ -18,12 +18,11 @@ width
 border-color
 border-width
 border-style
-
+border-radius
+background-color
 
 
 TYPE
 -------
 px
-
-
-
+%
